@@ -6,7 +6,6 @@ import os
 # load .env
 load_dotenv()
 
-mySecret = os.environ.get('mySecret')
 
 def ranking():
     pass
@@ -14,7 +13,7 @@ def ranking():
     BASE_URL = 'https://api.themoviedb.org/3'
     path = '/movie/popular'
     params = {
-    'api_key': '6063613534f6f23e1c791f83a36dbeb6',
+    'api_key': os.environ.get('apikey'),
     'language': 'ko-KR',
     'region': 'KR'
     }
