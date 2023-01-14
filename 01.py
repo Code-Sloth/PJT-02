@@ -5,7 +5,6 @@ import os
 # load .env
 load_dotenv()
 
-api_key = os.environ.get('api_key')
 
 def popular_count():
     pass 
@@ -13,7 +12,7 @@ def popular_count():
     BASE_URL = 'https://api.themoviedb.org/3'
     path = '/movie/popular'
     params = {
-    'api_key': '6063613534f6f23e1c791f83a36dbeb6',
+    'api_key': os.environ.get('my_secret'),
     'language': 'ko-KR',
     'region': 'KR'
     }
@@ -27,4 +26,3 @@ if __name__ == '__main__':
     """
     print(popular_count())
     # 20
-
