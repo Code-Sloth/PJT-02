@@ -5,7 +5,7 @@ import os
 # load .env
 load_dotenv()
 
-params = os.environ.get('api_key')
+api_key = os.environ.get('api_key')
 
 def popular_count():
     pass 
