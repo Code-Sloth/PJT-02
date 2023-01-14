@@ -12,7 +12,7 @@ def popular_count():
     BASE_URL = 'https://api.themoviedb.org/3'
     path = '/movie/popular'
     params = {
-    'api_key': os.environ.get('my_secret'),
+    'api_key': os.environ.get('apikey'),
     'language': 'ko-KR',
     'region': 'KR'
     }
